@@ -1,0 +1,136 @@
+.titledoc{
+  font-weight: bold;
+}
+
+.background-page {
+    background-color: #edf6f9;
+    height: 100%;
+    width: 100%;
+  }
+  .background-navbar {
+    background-color: #f7b267;
+    /* #ffddd2 #4cc9f0*/
+  }
+  .navbar-logo {
+    height: 40px;
+    width: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+  }
+  * {
+    margin: 0px;
+    padding: 0px;
+  }
+  .logo-text {
+    border-radius: 100px;
+    height: 40px;
+    font-size: x-large;
+    width: 150px;
+    background-color: white;
+    color: maroon;
+    padding-left: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  
+  .swiftyourhome{
+    background-color: white;
+    color: #ff8400;
+    box-shadow: 1px 1px 10px 0px gray;
+    font-weight: bold;
+    border-radius: 100px;
+    padding: 10px;
+    margin-top: 15px;
+  }
+  .swiftyourhome:hover{
+    background-color: #ff8400;
+    color: white;
+    box-shadow: 1px 1px 5px 1px gray;
+    
+  }
+  .bar{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 15px;
+    display: none;
+    position: fixed;
+    right: 30px;
+    box-shadow: 1px 1px 5px 1px gray;
+  }
+  .bar:hover{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 15px;
+    display: block;
+    position: fixed;
+    right: 30px;
+    box-shadow: 1px 1px 5px 3px gray;
+  }
+  .barbox{
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px;
+    width: 200px;
+    border-radius: 20px;
+    position: fixed;
+    right: 10px;
+    display: none;
+  }
+  .barbox>ul>li>a{
+    text-decoration: none;
+    color: black;
+  }
+  .barul{
+    padding-left: 0px;
+    margin-bottom: 0px;
+  }
+  .barbox>ul>li{
+    text-decoration: none;
+   list-style: none;
+   padding: 10px;
+   padding-right: 5px;
+  }
+  .barbox>ul>li:hover{
+    text-decoration: none;
+    background-color: #f1f0f0;
+   list-style: none;
+   padding: 10px;
+   padding-right: 5px;
+  }
+  @media screen and (max-width:768px) {
+    .bar{
+      display: block;
+      margin-right: 40px;
+    }
+    .background-navbar{
+      background-color: black;
+    }
+    .navbar-logo{
+      margin-top: 25px;
+      margin-left: 30px;
+    }
+    .logo-text {
+      border-radius: 100px;
+      height: 40px;
+      font-size: medium;
+      width: 100px;
+      background-color: white;
+      color: maroon;
+      padding-left: 5px;
+      padding-top: 5px;
+      margin-top: 25px;
+      margin-left: 10px;
+    }
+    .bar{
+      display: block;
+    }
+    .bar:hover .barbox #barul{
+      display: block;
+    }
+  }
