@@ -1,0 +1,54 @@
+.bg-color{
+    background-color: #f7b267;
+}
+.logo{
+    margin-right: 0rem;
+    margin-top: -0.3rem;
+    padding-right: 0rem;
+    height: 1.3rem;
+}
+.logo-text{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    color: white;
+    font-weight: bolder;
+}
+.yourhome{
+    color: white;
+    padding-top: 0.5rem;
+    font-weight: bolder;
+    background-color: #f7b267;
+}
+.yourhome:hover{
+    height: 2rem;
+    border-radius: 8rem;
+    font-weight: bolder;
+    padding-top: 0.2rem;
+    background-color: white;
+    color: #ff8400;
+}
+.signin{
+    margin-left: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.signin:hover{
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+    margin-top: 0.2rem;
+}
+.signup{
+    margin-left: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.signup:hover{
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+}

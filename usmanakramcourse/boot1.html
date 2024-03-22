@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
-    <link rel="stylesheet" href="/usmanakramcourse/style.css" />
+    <link rel="stylesheet" href="/usmanakramcourse/project.css" />
     <link
       rel="shortcut icon"
       href="/usmanakramcourse/doclogo.png"
@@ -20,32 +20,74 @@
     </title>
   </head>
   <body>
-    <div class="fluid-container background-navbar d-flex">
-      <div style="display: flex">
-        <img
-          src="/usmanakramcourse/logorange.png"
-          alt="logo"
-          class="navbar-logo"
-        />
-        <div class="logo-text">
-          <div>Swiftspaces</div>
+    <nav class="navbar navbar-expand-md navbar-dark navbar-height">
+      <div class="upperlogotext d-lg-none d-md-none d-sm-none">Swiftspaces</div>
+      <div class="d-flex logos">
+        <div>
+          <img
+            src="/webcourse-104/usmanakramcourse/logorange.png"
+            class="logo"
+            alt="logo"
+          />
+        </div>
+        <div class="logotextdiv">
+          <a class="navbar-brand logo-text me-5" href="#">Swiftspaces</a>
+        </div>
+        <div class="inpform">
+          <form style="display: flex; padding-top: 0px">
+            <div class="d-flex">
+              <div class="inpsearchtabs inpsearchtabs1">
+                <a href="#">Anywhere</a>
+              </div>
+              <div class="inpsearchtabs"><a href="#">Anyweek</a></div>
+              <div class="inpsearchtabs inpsearchtabs2">
+                <a href="#">Add Guests</a>
+              </div>
+            </div>
+            <div class="searchbtn">
+              <a href="#"><i class="fas fa-search searchbtn1"></i></a>
+            </div>
+          </form>
         </div>
       </div>
-      <div>
-        <div class="swiftyourhome">Swiftspace Your Home</div>
-      </div>
-      <div class="bar">
-        <i class="fa-solid fas fa-bars"></i>
-      </div>
-    </div>
-    <div class="fluid-container background-page" style="height: 800px">
-      <div class="barbox">
-        <ul class="barul">
-          <li><a href="#">Signout</a></li>
-          <li><a href="#">Swiftspace Your Home</a></li>
-          <li><a href="#">Settings</a></li>
+      <button
+        class="navbar-toggler d-lg-none bar"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars bar1"></i>
+      </button>
+      <div class="collapse navbar-collapse orangecolor" id="collapsibleNavId">
+        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+          <li class="nav-item mt-2">
+            <a class="nav-link yourhome" href="#" aria-current="page"
+              >Swiftspace Your Home
+            </a>
+          </li>
+          <li class="ms-4 my-2 mt-3 yourhome">
+            <a href="#" class="signinout">Signout</a>
+          </li>
+          <li class="ms-1 mt-3 my-2 yourhome">
+            <a href="#" class="signinout signin">Signin</a>
+          </li>
         </ul>
+        <!-- <form class="d-flex my-2 my-lg-0">
+          <input
+            class="form-control me-sm-2"
+            type="text"
+            placeholder="Add Guests-Add Week-Anywhere"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form> -->
       </div>
-    </div>
+    </nav>
+
+    <script src="/webcourse-104/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

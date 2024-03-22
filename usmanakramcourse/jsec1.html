@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .hide {
+        display: none;
+      }
+
+      .myDIV:hover + .hide {
+        display: block;
+        color: red;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="myDIV">Hover over me.</div>
+    <div class="hide">I am shown when someone hovers over the div above.</div>
+  </body>
 </html>
