@@ -15,108 +15,140 @@
     style="
       background-image: url(/usmanakramcourse/pics/nitish-meena-RbbdzZBKRDY-unsplash.jpg);
       background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
     "
   >
-    <div class="container contactusform">
-      <div class="row"><h2 style="color: #ff8400">Swiftspaces</h2></div>
-      <div
-        style="
-          background-color: #f7b267;
-          color: white;
-          width: 43rem;
-          margin-left: 3rem;
-          height: 3rem;
-          margin-top: 1.5rem;
-          padding-left: 15.5rem;
-          padding-top: 0.75rem;
-          font-weight: bolder;
-          border-radius: 1rem;
-        "
-      >
-        Contact customer supprt
+    <div class="mt-lg-5 mt-sm-0">.</div>
+    <div
+      style="
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.815
+        ); /* Add a semi-transparent background to the container */
+        padding: 20px;
+        border-radius: 10px;
+      "
+      class="container contactusform mt-lg-5"
+    >
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h2 style="color: #ff8400">Swiftspaces</h2>
+        </div>
       </div>
-      <form id="myForm">
-        <div class="ms-5 d-flex mt-4">
-          <div>
-            <label for="username" class="mb-1"><h5>First Name:</h5></label
-            ><br />
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h4
+            style="
+              color: white;
+              background-color: #ff8400;
+              border-radius: 10px;
+              padding: 10px 0px;
+            "
+          >
+            Customer Contact Support
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="firstName" style="color: #ff8400; font-weight: bold"
+              >First Name:</label
+            >
             <input
               type="text"
-              id="username"
-              name="username"
-              class="firstlastform"
-            /><br /><br />
-          </div>
-          <div class="ms-5">
-            <label for="username" class="mb-1"><h5>Last Name:</h5></label><br />
-            <input
-              type="text"
-              id="username"
-              name="username"
-              class="firstlastform"
+              id="firstName"
+              name="firstName"
+              class="form-control"
             />
           </div>
         </div>
-        <div class="ms-5 d-flex mt-4">
-          <div>
-            <label for="username" class="mb-1"><h5>Email:</h5></label><br />
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="lastName" style="color: #ff8400; font-weight: bold"
+              >Last Name:</label
+            >
             <input
               type="text"
-              id="username"
-              name="username"
-              class="firstlastform"
-            /><br /><br />
-          </div>
-          <div class="ms-5">
-            <label for="username" class="mb-1"><h5>Phone Number:</h5></label
-            ><br />
-            <input
-              type="text"
-              id="username"
-              name="username"
-              class="firstlastform"
+              id="lastName"
+              name="lastName"
+              class="form-control"
             />
           </div>
         </div>
-        <div class="ms-5">
-          <label for="username" class="mb-1"><h5>Reason for contact:</h5></label
-          ><br />
-          <textarea
-            class="form-control"
-            id="username"
-            name="username"
-            rows="5"
-          ></textarea>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email" style="color: #ff8400; font-weight: bold"
+              >Email:</label
+            >
+            <input type="email" id="email" name="email" class="form-control" />
+          </div>
         </div>
-        <input type="submit" value="Submit" class="submitbtn" />
-      </form>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="phoneNumber" style="color: #ff8400; font-weight: bold"
+              >Phone Number:</label
+            >
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="reason" style="color: #ff8400; font-weight: bold"
+              >Reason for Contact:</label
+            >
+            <textarea
+              class="form-control"
+              id="reason"
+              name="reason"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-center">
+          <button type="button" id="submitButton" class="w-25 btn submitbtn">
+            Submit
+          </button>
+        </div>
+      </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("input").addClass("bordergray");
-        $("#myForm").submit(function (e) {
-          e.preventDefault();
-          $("input textarea").removeClass("error");
-
+        $("#submitButton").click(function () {
+          // Check if any field is empty
           var isEmpty = false;
-          $('input[type="text"], input[type="password"],textarea').each(
-            function () {
-              if ($(this).val().trim() === "") {
-                $(this).removeClass("bordergray");
-                $(this).addClass("error");
-                isEmpty = true;
-              }
+          $(
+            'input[type="text"], input[type="email"], input[type="tel"], textarea'
+          ).each(function () {
+            if ($(this).val() === "") {
+              isEmpty = true;
+              $(this).addClass("is-invalid");
+            } else {
+              $(this).removeClass("is-invalid");
             }
-          );
+          });
 
+          // If any field is empty, prevent form submission
           if (isEmpty) {
-            alert("Please fill in all fields.");
+            alert("Please fill in all the required fields.");
             return false;
           }
-          $("input textarea").removeClass("error");
-          $("input textarea").addClass("bordergray");
-          alert("Form submitted successfully!");
         });
       });
     </script>

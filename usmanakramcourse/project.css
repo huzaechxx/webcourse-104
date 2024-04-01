@@ -1,21 +1,15 @@
 .bg-color{
     background-color: #f7b267;
 }
-.submitbtn{
-    width: 10rem;
-    background-color: #f7b267;
-    color: white;
-    border: 1px solid white;
-    margin-left: 19rem;
-    margin-top: 2rem;
-    padding: 0.5rem 2rem;
-    border-radius: 1rem;
-}
 .logo{
     margin-right: 0rem;
     margin-top: -0.3rem;
     padding-right: 0rem;
     height: 1.3rem;
+}
+.submitbtn{
+    background-color: #ff8400;
+    color: white;
 }
 .logodiv{
     margin-left: -7%;
@@ -30,38 +24,48 @@
     color: white;
     font-weight: bolder;
     margin-left: 10rem;
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: -1rem;
+}
+.bookstay:hover{
+    height: 2rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+    font-weight: bolder;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .contactusbtn{
     color: white;
+    font-weight: bolder;
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.contactusbtn:hover{
+    height: 2rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+    font-weight: bolder;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .error {
     border: 2px solid red;
 }
-.contactusform{
-    background-color: white;
-    height: 40rem;
-    border-radius: 3rem;
-    margin-top: 5rem;
-    width: 50rem;
-}
-.row{
-    padding-left: 19rem;
-    padding-top: 2rem;
-}
-.form-control{
-    width: 43rem;
-}
-.firstlastform{
-    width: 20rem;
-    border-radius: 0.25rem;
-}
+
 .bordergray{
     border: 1px solid gray;
 }
-.emailform{
-    width: 43rem;
-    border-radius: 0.25rem;
-}
+
 .yourhome{
     margin-top: -0.5rem;
     color: white;
@@ -102,12 +106,70 @@
     color: #ff8400;
     border-radius: 8rem;
 }
+.scroll-div{
+    background-color: white;
+    margin-left: 1rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.img-scroll{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.scroll-txt{
+    color: black;
+    font-size: small;
+    text-decoration: none;
+}
+.carousel-indicators{
+    list-style-type: none;
+}
+.carousalpic{
+    border-radius: 0.5rem;
+    height: 17rem;
+}
+.card{
+    /* border-radius: 1rem;
+    box-shadow: 1px 1px 1px gray; */
+    border: 0px solid white;
+}
+/*.card:hover{
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.6s ease;
+} */
+.divcont{
+    background-color:aqua;
+    color: white;
+    padding: 100px;
+}
+.divv{ 
+    display: flex; 
+    overflow-x: auto;
+    width: 70%;
+}
+.divvv{
+    margin-left: 8rem;
+}
+.divv::-webkit-scrollbar{
+    display: none;
+}
 @media screen and (max-width:320px) {
     .bg-color{
         background-color: aquamarine;
     }
     .logodiv{
         margin-left: 5%;
+    }
+}
+@media screen and (max-width:990px) {
+    .bookstay{
+        margin-left: 0rem;
+    }
+    form{
+        margin-left: 0rem;
+    }
+    .signin{
+        margin-left: 0rem;
     }
 }
 @media screen and (max-width:375px) {
