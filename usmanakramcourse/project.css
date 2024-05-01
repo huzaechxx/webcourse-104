@@ -153,6 +153,21 @@
 .divv::-webkit-scrollbar{
     display: none;
 }
+.searchbycat{
+    margin-left: 2rem;
+    padding-top: 0.6rem;
+    height: 4rem;
+    border: 0.5px solid gray;
+    box-shadow: 2px 2px 1px gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    font-size: x-large;
+    background-color: #edf6f9;
+}
+.favcon{
+    border-radius: 2.5rem;
+}
 @media screen and (max-width:320px) {
     .bg-color{
         background-color: aquamarine;
@@ -180,3 +195,17 @@
         margin-left: 5%;
     }
 }
+
+@media screen and (max-width:768px) {
+    .searchbycat{
+        font-size: large;
+        width:  10rem;
+    }    
+}
+@media screen and (max-width:992px) {
+    .searchbycat{
+        font-size: large;
+        width:  10rem;
+    }    
+}
+

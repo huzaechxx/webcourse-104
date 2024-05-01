@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Swiftspaces | Vacation rentals,Cabins,Beaches & more</title>
+  </head>
+  <body
+    style="
+      background-image: url(https://images.unsplash.com/photo-1444090542259-0af8fa96557e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8b3JhbmdlJTIwbGFuZHNjYXBlfGVufDB8fDB8fHww);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #fff;
+    "
+  >
+    <div class="mt-lg-5 mt-sm-0">.</div>
+    <div
+      style="
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.815
+        ); /* Add a semi-transparent background to the container */
+        padding: 20px;
+        border-radius: 10px;
+      "
+      class="container contactusform mt-lg-5"
+    >
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h2 style="color: #ff8400">Swiftspaces</h2>
+        </div>
+      </div>
+      <div class="row text-center mb-4">
+        <div class="col">
+          <h4
+            style="
+              color: white;
+              background-color: #ff8400;
+              border-radius: 10px;
+              padding: 10px 0px;
+            "
+          >
+            Customer Contact Support
+          </h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="firstName" style="color: #ff8400; font-weight: bold"
+              >First Name:</label
+            >
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              class="form-control"
+            />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="lastName" style="color: #ff8400; font-weight: bold"
+              >Last Name:</label
+            >
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email" style="color: #ff8400; font-weight: bold"
+              >Email:</label
+            >
+            <input type="email" id="email" name="email" class="form-control" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="phoneNumber" style="color: #ff8400; font-weight: bold"
+              >Phone Number:</label
+            >
+            <input
+              type="tel"
+              id="phoneNumber"
+              name="phoneNumber"
+              class="form-control"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="reason" style="color: #ff8400; font-weight: bold"
+              >Reason for Contact:</label
+            >
+            <textarea
+              class="form-control"
+              id="reason"
+              name="reason"
+              rows="5"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col text-center">
+          <button type="button" id="submitButton" class="w-25 btn submitbtn">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#submitButton").click(function () {
+          // Check if any field is empty
+          var isEmpty = false;
+          $(
+            'input[type="text"], input[type="email"], input[type="tel"], textarea'
+          ).each(function () {
+            if ($(this).val() === "") {
+              isEmpty = true;
+              $(this).addClass("is-invalid");
+            } else {
+              $(this).removeClass("is-invalid");
+            }
+          });
+
+          // If any field is empty, prevent form submission
+          if (isEmpty) {
+            alert("Please fill in all the required fields.");
+            return false;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
