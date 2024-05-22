@@ -1,0 +1,24 @@
+<body class="bodylogin">
+  <h1 class="swiftnamelogin">Swiftspaces</h1>
+  <div class="bodydivlogin">
+    <div class="containerlogin">
+      <div class="login-boxlogin">
+        <h2>Login</h2>
+        <form method="post">
+          <div class="input-grouplogin">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="input-grouplogin">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+          </div>
+          <button class="buttonlogin" type="submit">Login</button>
+        </form>
+        <% if (flash) { %>
+        <div class="alert alert-<%-flash.type%>"><%= flash.message %></div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</body>

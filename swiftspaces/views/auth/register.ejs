@@ -1,0 +1,32 @@
+<body class="bodyreg">
+  <h1 class="swiftnamereg">Swiftspaces</h1>
+  <div class="bodydivreg">
+    <div class="containerreg">
+      <div class="signup-boxreg">
+        <h2>Sign Up</h2>
+        <form method="post">
+          <div class="input-groupreg">
+            <label for="username">Username</label>
+            <input type="text" id="username" required />
+          </div>
+          <div class="input-groupreg">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+          <div class="input-groupreg">
+            <label for="password">Password</label>
+            <input type="password" id="password" required />
+          </div>
+          <div class="input-groupreg">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" required />
+          </div>
+          <button class="buttonreg" type="submit">Sign Up</button>
+        </form>
+        <% if (flash) { %>
+        <div class="alert alert-<%-flash.type%>"><%= flash.message %></div>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</body>

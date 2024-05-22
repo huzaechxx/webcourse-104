@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/bootstrap.min.css" />
+    <link rel="stylesheet" href="/project.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="/usmanakramcourse/pics/fotor-2024040414741.png"
+      type="image/x-icon"
+    />
+
+    <title>Swiftspaces | Vacation rentals,Cabins,Beaches & more</title>
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-color">
+      <div class="container my-3">
+        <div class="logodiv">
+          <img src="/img/logorange.png" alt="" class="logo" />
+          <a class="navbar-brand logo-text" href="#">Swiftspaces</a>
+        </div>
+        <button
+          class="navbar-toggler hidden-lg-up"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId"
+          aria-controls="collapsibleNavId"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+            <li class="nav-item m-sm-0">
+              <a class="nav-link hover" href="#"
+                ><div class="bookstay">Book a stay!</div></a
+              >
+            </li>
+            <li class="nav-item ms-1">
+              <a class="nav-link active" href="#" aria-current="page"
+                ><div class="container-fluid yourhome">
+                  Swiftspace Your Home
+                </div>
+                <span class="visually-hidden">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=""
+                ><div class="container-fluid contactusbtn">Reviews</div></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus"
+                ><div class="container-fluid contactusbtn">Contact us</div></a
+              >
+            </li>
+          </ul>
+
+          <form class="d-flex my-2 my-lg-0">
+            <!-- <a style="text-decoration: none" href="/auth/register.ejs"
+              ><div class="signin">Signup</div></a
+            > -->
+            <% if (!user) { %>
+            <li style="list-style: none">
+              <a style="text-decoration: none" href="/login"
+                ><div class="signup">Signin</div></a
+              >
+            </li>
+
+            <li style="list-style: none">
+              <a style="text-decoration: none" href="/register"
+                ><div class="signup">Signup</div></a
+              >
+            </li>
+
+            <% } else { %>
+            <li style="list-style: none">
+              <a style="text-decoration: none" href="/logout"
+                ><div class="signup">Logout</div></a
+              >
+            </li>
+            <li>Welcome <%= user.name %>!</li>
+            <% } %>
+            <!-- <a style="text-decoration: none" href="/auth/login.ejs"
+              ><div class="signup">Signin</div></a
+            > -->
+            <% if (flash) { %>
+            <div class="alert alert-<%-flash.type%>"><%= flash.message %></div>
+            <% } %>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <%-body %>
+</html>

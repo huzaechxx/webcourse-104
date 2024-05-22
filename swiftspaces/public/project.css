@@ -1,0 +1,376 @@
+.bg-color{
+    background-color: #f7b267;
+}
+.logo{
+    margin-right: 0rem;
+    margin-top: -0.3rem;
+    padding-right: 0rem;
+    height: 1.3rem;
+}
+.submitbtn{
+    background-color: #f7b267;
+    color: white;
+}
+.logodiv{
+    margin-left: -7%;
+}
+.logo-text{
+    margin-left: 0rem;
+    padding-left: 0rem;
+    color: white;
+    font-weight: bolder;
+}
+.bookstay{
+    color: white;
+    font-weight: bolder;
+    margin-left: 10rem;
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: -1rem;
+}
+.bookstay:hover{
+    height: 2rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+    font-weight: bolder;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.contactusbtn{
+    color: white;
+    font-weight: bolder;
+    margin-top: -0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.contactusbtn:hover{
+    height: 2rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+    font-weight: bolder;
+    padding-top: 0.2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.error {
+    border: 2px solid red;
+}
+
+.bordergray{
+    border: 1px solid gray;
+}
+
+.yourhome{
+    margin-top: -0.5rem;
+    color: white;
+    padding-top: 0.5rem;
+    font-weight: bolder;
+    background-color: #f7b267;
+}
+.yourhome:hover{
+    height: 2rem;
+    border-radius: 8rem;
+    font-weight: bolder;
+    padding-top: 0.2rem;
+    background-color: white;
+    color: #ff8400;
+}
+.signin{
+    margin-left: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.signin:hover{
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+    margin-top: 0.2rem;
+}
+.signup{
+    margin-left: 1rem;
+    color: white;
+    padding: 0.5rem 1rem;
+}
+.signup:hover{
+    height: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: white;
+    color: #ff8400;
+    border-radius: 8rem;
+}
+.scroll-div{
+    background-color: white;
+    margin-left: 1rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.img-scroll{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.scroll-txt{
+    color: black;
+    font-size: small;
+    text-decoration: none;
+}
+.carousel-indicators{
+    list-style-type: none;
+}
+.carousalpic{
+    border-radius: 0.5rem;
+    height: 17rem;
+}
+.card{
+    /* border-radius: 1rem;
+    box-shadow: 1px 1px 1px gray; */
+    border: 0px solid white;
+}
+/*.card:hover{
+    box-shadow: 3px 3px 3px gray;
+    transition: 0.6s ease;
+} */
+.divcont{
+    background-color:aqua;
+    color: white;
+    padding: 100px;
+}
+.divv{ 
+    display: flex; 
+    overflow-x: auto;
+    width: 70%;
+}
+.divvv{
+    margin-left: 8rem;
+}
+.divv::-webkit-scrollbar{
+    display: none;
+}
+.searchbycat{
+    margin-left: 2rem;
+    padding-top: 0.6rem;
+    height: 4rem;
+    border: 0.5px solid gray;
+    box-shadow: 2px 2px 1px gray;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 1rem;
+    font-size: x-large;
+    background-color: #edf6f9;
+}
+.favcon{
+    border-radius: 2.5rem;
+}
+.bodyreg {
+    background-color: #f7b267;
+    
+}
+.bodydivreg {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7b267;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71vh;
+    margin: 0;
+}
+
+.containerreg {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(
+      255,
+      245,
+      235,
+      0.95
+    ); /* Off-white with slight opacity */
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.signup-boxreg {
+    text-align: center;
+}
+
+.signup-boxreg h2 {
+    margin-bottom: 20px;
+    color: #f7b267; /* Orange color */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.input-groupreg {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.input-groupreg label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-groupreg input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.buttonreg {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    background-color: #f7b267; /* Orange color */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonreg:hover {
+    background-color: #e65a00; /* Darker orange on hover */
+}
+.swiftnamereg {
+    color: white;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 2%;
+}
+.bodydivlogin {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7b267;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+}
+.bodylogin {
+    background-color: #f7b267;
+}
+
+.containerlogin {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(
+      255,
+      245,
+      235,
+      0.95
+    ); /* Off-white with slight opacity */
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px gray;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.login-boxlogin {
+    text-align: center;
+}
+
+.login-boxlogin h2 {
+    margin-bottom: 20px;
+    color: #f7b267; /* Orange color */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.input-grouplogin {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-grouplogin label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.input-grouplogin input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.buttonlogin {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7b267; /* Orange color */
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonlogin:hover {
+    background-color: #e65a00; /* Darker orange on hover */
+}
+.swiftnamelogin {
+    color: white;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+@media screen and (max-width:320px) {
+    .bg-color{
+        background-color: aquamarine;
+    }
+    .logodiv{
+        margin-left: 5%;
+    }
+}
+@media screen and (max-width:990px) {
+    .bookstay{
+        margin-left: 0rem;
+    }
+    form{
+        margin-left: 0rem;
+    }
+    .signin{
+        margin-left: 0rem;
+    }
+}
+@media screen and (max-width:375px) {
+    .bg-color{
+        background-color: #f7b267;
+    }
+    .logodiv{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .searchbycat{
+        font-size: large;
+        width:  10rem;
+    }    
+}
+@media screen and (max-width:992px) {
+    .searchbycat{
+        font-size: large;
+        width:  10rem;
+    }    
+}
+
