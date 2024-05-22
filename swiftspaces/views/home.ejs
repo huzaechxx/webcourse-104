@@ -1,5 +1,13 @@
 <body>
-  <div style="padding-top: 5rem">.</div>
+  <div style="padding-top: 5rem">
+    <!-- <% roomdata.forEach(item => { %>
+    <li>
+      <strong>Name:</strong> <%= item.location %>, <strong>Age:</strong> <%=
+      item.price %>
+    </li>
+    <% }); %> -->
+    .
+  </div>
   <div class="d-flex divvv">
     <div>
       <i
@@ -10,7 +18,7 @@
     </div>
     <div class="divv">
       <div class="scroll-div">
-        <a href="#" class="scroll-txt"
+        <a href="beaches" class="scroll-txt"
           ><img
             src="https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg"
             alt=""
@@ -42,7 +50,7 @@
       <div class="scroll-div">
         <a href="#" class="scroll-txt"
           ><img
-            src="https://a0.muscache.com/pictures/8b44f770-7156-4c7b-b4d3-d92549c8652f.jpg"
+            src="https://a0.muscache.com/pictures/ee9e2a40-ffac-4db9-9080-b351efc3cfc4.jpg"
             alt=""
             class="img-scroll"
           />
@@ -76,7 +84,7 @@
             alt=""
             class="img-scroll ms-2"
           />
-          <div class="scroll-txt ms-1">Cabin</div></a
+          <div class="scroll-txt ms-2">Cabin</div></a
         >
       </div>
       <div class="scroll-div">
@@ -86,7 +94,7 @@
             alt=""
             class="img-scroll ms-2"
           />
-          <div class="scroll-txt ms-3">Lakefront</div></a
+          <div class="scroll-txt ms-1">Lakefront</div></a
         >
       </div>
       <div class="scroll-div">
@@ -147,11 +155,11 @@ spaces</pre
       <div class="scroll-div">
         <a href="#" class="scroll-txt">
           <img
-            src="https://a0.muscache.com/pictures/f0c5ca0f-5aa0-4fe5-b38d-654264bacddf.jpg"
+            src="https://a0.muscache.com/pictures/3726d94b-534a-42b8-bca0-a0304d912260.jpg"
             alt=""
             class="img-scroll"
           />
-          <div class="scroll-txt ms-2">Studio</div>
+          <div class="scroll-txt">Trending</div>
         </a>
       </div>
       <div class="scroll-div">
@@ -167,11 +175,11 @@ spaces</pre
       <div class="scroll-div">
         <a href="#" class="scroll-txt">
           <img
-            src="https://a0.muscache.com/pictures/5cdb8451-8f75-4c5f-a17d-33ee228e3db8.jpg"
+            src="https://a0.muscache.com/pictures/c027ff1a-b89c-4331-ae04-f8dee1cdc287.jpg"
             alt=""
-            class="img-scroll ms-2"
+            class="img-scroll"
           />
-          <div class="scroll-txt">Boats</div>
+          <div class="scroll-txt ms-1">Boats</div>
         </a>
       </div>
       <div class="scroll-div">
@@ -1577,6 +1585,97 @@ spaces</pre
           </div>
         </div>
       </div>
+
+      <% let i = 16; %> <% roomdata.forEach(item => { %>
+      <div class="col-3">
+        <div class="card">
+          <div class="container-fluid mt-2">
+            <div
+              id="carouselId<%= i %>"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <ul class="carousel-indicators">
+                <li
+                  data-bs-target="#carouselId"
+                  data-bs-slide-to="0"
+                  class="active"
+                  aria-current="true"
+                  aria-label="First slide"
+                ></li>
+                <li
+                  data-bs-target="#carouselId"
+                  data-bs-slide-to="1"
+                  aria-label="Second slide"
+                ></li>
+                <li
+                  data-bs-target="#carouselId"
+                  data-bs-slide-to="2"
+                  aria-label="Third slide"
+                ></li>
+              </ul>
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img
+                    src="<%= item.pic1 %>"
+                    class="w-100 d-block carousalpic"
+                    alt="First slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="<%= item.pic2 %>"
+                    class="w-100 d-block carousalpic"
+                    alt="Second slide"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="<%= item.pic3 %>"
+                    class="w-100 d-block carousalpic"
+                    alt="Third slide"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselId<%= i %>"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselId<%= i %>"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="d-flex">
+              <h6 class="card-title w-100 me-4"><%= item.location %></h6>
+              <div class="w-25 ms-3 ps-2">
+                <i class="fas fa-star"></i><%= item.rating %>
+              </div>
+            </div>
+            <p class="card-text text-secondary"><%= item.avaliability %></p>
+            <p class="card-text text-secondary"><%= item.price %>/Night</p>
+          </div>
+        </div>
+      </div>
+      <% i++; %> <% }); %>
     </div>
   </div>
   <script src="/bootstrap.bundle.js"></script>

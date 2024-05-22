@@ -9,5 +9,5 @@ const propertyschema = mongoose.Schema({
     rating:String
 });
 
-const propertymodel = mongoose.model("amazing",propertyschema);
+const propertymodel = mongoose.model("farms",propertyschema);
 module.exports = propertymodel;

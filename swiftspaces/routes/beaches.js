@@ -4,7 +4,7 @@ let router = express.Router();
 
 let Schema = mongoose.Schema;
 
-const roomschema = new Schema(
+const beachesschema = new Schema(
     {
     location:String,
     price:String,
@@ -16,12 +16,12 @@ const roomschema = new Schema(
     }
 );
 
-let rooms = mongoose.model("rooms",roomschema);
+let beaches = mongoose.model("beaches",beachesschema);
 
-router.get('/',async(req,res)=>{
+router.get('/beaches',async(req,res)=>{
     try{
-        const roomdata = await rooms.find({});
-        res.render('home',{roomdata});
+        const beachesdata = await beaches.find({});
+        res.render('beaches',{beachesdata});
     }catch(error) {
         res.status(500).send(error.message);
       }
