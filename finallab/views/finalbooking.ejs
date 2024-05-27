@@ -1,0 +1,48 @@
+<body style="background-color: #f7b267">
+  <div style="height: 100px">.</div>
+  <div
+    style="
+      background-color: #fff8f0;
+      border-radius: 50px;
+      width: 75%;
+      margin-left: 12%;
+    "
+  >
+    <div class="d-flex mt-5 mb-5 pt-5 pb-5">
+      <div>
+        <h1 style="margin: 20px">YOUR BOOKING HAS BEEN DONE</h1>
+        <h4 style="margin: 20px">
+          UNIQUE ID:&nbsp;&nbsp;&nbsp;&nbsp;<%= propertyid %>
+        </h4>
+        <h4 style="margin: 20px">
+          PLACE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=
+          ploc %>
+        </h4>
+        <h4 style="margin: 20px">
+          DURATION:&nbsp;&nbsp;&nbsp;&nbsp;<%= pav %>
+        </h4>
+        <h4 style="margin: 20px">
+          TOTAL BILL:&nbsp;&nbsp;&nbsp;&nbsp;<%= pp %>
+        </h4>
+        <div style="margin: 20px">
+          Kindly submit your payment at the hotel counter
+        </div>
+      </div>
+      <img
+        src="<%= propertypic %>"
+        style="height: 250px; margin: 20px; margin-top: 30px"
+      />
+    </div>
+  </div>
+  <div
+    style="
+      background-color: #fff8f0;
+      margin-left: 43%;
+      border-radius: 40px;
+      width: 200px;
+      height: 30px;
+    "
+  >
+    <a href="home" style="color: #f7b267; padding: 20px">Return To Homepage</a>
+  </div>
+</body>
